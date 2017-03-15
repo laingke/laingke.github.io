@@ -1,0 +1,2 @@
+# laingke.github.io
+BLOG
