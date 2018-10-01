@@ -1,0 +1,313 @@
+.grid-block {
+    background-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #dddddd;
+    padding: 15px 50px;
+    margin: 10px 0;
+}
+
+.grid-block:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-color: transparent #ddd #ddd transparent;
+    border-style: solid;
+    border-width: 21px;
+}
+
+.grid-block:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-color: transparent #ebebeb #ebebeb transparent;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.grid-block h4 {
+    word-wrap: break-word;
+}
+
+/* timeline css */
+.timeline {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    margin-left: -1.5px;
+    left: 2%;
+}
+
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 67px;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li > .timeline-panel {
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 24px;
+    margin-left: -70px;
+    background-color: #999999;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+    margin-top: 5px;
+}
+
+/* Tech Stack*/
+.tech-stack {
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 25px;
+    background: #A75265;
+    position: relative;
+}
+
+.tech-stack:before {
+    content: "\f004";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+}
+
+/* stackoverflow css */
+.list-stackoverflow span {
+    margin-right: 5px;
+    width: 35px;
+}
+
+/* skills css */
+.list-skills li .progress {
+    height: 10px;
+    box-shadow: none;
+    overflow: inherit;
+}
+
+.list-skills li .progress .progress-bar {
+    border-radius: 5px;
+    text-align: right;
+    position: relative;
+    background: #63A4B5;
+    box-shadow: none;
+    height: 10px;
+}
+
+.list-skills li .progress .progress-bar span {
+    position: relative;
+    bottom: -15px;
+    font-size: 10px;
+    color: white;
+    right: -13px;
+    display: inline-block;
+    background: #D84E4E;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.list-skills li .progress .progress-bar span:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: -5px;
+    border-bottom: 5px solid #D84E4E;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.list-skills li:nth-child(even) .progress-bar {
+    background: #4B6F78;
+}
+
+.list-strip li {
+    color: white;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    background: #4B6F78;
+}
+
+.list-strip li:nth-child(even) {
+    background: #BA4E4E;
+}
+
+.title {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.title.with-icon {
+    padding-left: 50px;
+}
+
+.title .cat-title {
+    margin-right: 5px;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    background: #249EBD;
+    padding: 10px;
+    color: white;
+    min-width: 40px;
+    text-align: center;
+    top: -6px;
+    min-height: 40px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+
+.title .cat-title:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -10px;
+    border-top: 10px solid #249EBD;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.badge-right-float {
+    float: right;
+}

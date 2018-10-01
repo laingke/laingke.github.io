@@ -1,0 +1,148 @@
+---
+layout: default
+title: 我的简历 | LaingKe
+page-title: Professional Software Engineer
+home-title: A Back-End developer, OR more like a Full-Stack developer
+description:
+---
+
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    {% if site.resume.workHistory %}
+    <h3 class="title with-icon">工作经历</h3>
+    <ul class="timeline">
+        {% for work in site.resume.workHistory %}
+        <li class="timeline-inverted">
+            {% if work.started %}
+            <div class="timeline-badge info">{{ work.started }}</div>
+            {% endif %}
+            <div class="timeline-panel grid-block">
+                <div class="timeline-heading">
+                    {% if work.company %}
+                    <h4 class="timeline-title">{{ work.company }} </h4>
+                    {% endif %}
+                    <p>
+                        <small class="text-muted">
+                            {% if work.title %}
+                            {{ work.title }}
+                            {% endif %}
+                        </small>
+                    </p>
+                    <p>
+                        <small class="text-muted">
+                            {% if work.duration %}
+                            <i class="fa fa-calendar"></i> {{ work.duration }} |
+                            {% endif %}
+                            {% if work.location %}
+                            <i class="fa fa-map-marker"></i> {{ work.location }}
+                            {% endif %}
+                        </small>
+                    </p>
+                </div>
+                <div class="timeline-body">
+                    {% if work.description %}
+                    <p>{{ work.description }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if site.resume.educationHistory %}
+    <h3 class="title with-icon">教育经历</h3>
+    <ul class="timeline">
+        {% for education in site.resume.educationHistory %}
+        <li class="timeline-inverted">
+            {% if education.started %}
+            <div class="timeline-badge info">{{ education.started }}</div>
+            {% endif %}
+            <div class="timeline-panel grid-block">
+                <div class="timeline-heading">
+                    {% if education.organization %}
+                    <h4 class="timeline-title">{{ education.organization }}</h4>
+                    {% endif %}
+                    <p>
+                        <small class="text-muted">
+                            {% if education.degree %}
+                            {{ education.degree }}
+                            {% endif %}
+                            {% if education.major %}
+                            , {{ education.major }}
+                            {% endif %}
+                        </small>
+                    </p>
+                    <p>
+                        <small class="text-muted">
+                            {% if education.duration %}
+                            <i class="fa fa-calendar"></i> {{ education.duration }} |
+                            {% endif %}
+                            {% if education.location %}
+                            <i class="fa fa-map-marker"></i> {{ education.location }}
+                            {% endif %}
+                        </small>
+                    </p>
+                </div>
+                <div class="timeline-body">
+                    {% if education.description %}
+                    <p>{{ education.description }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if site.resume.programmingSkills %}
+    <h3 class="title with-icon">专业技能</h3>
+    <div class="grid-block">
+        <ul class="list-unstyled list-skills">
+            {% for programmingSkill in site.resume.programmingSkills %}
+            <li>
+                {% if programmingSkill.name %}
+                <span class="caption-skill">{{ programmingSkill.name }}</span>
+                {% if programmingSkill.percentage %}
+                <div class="progress">
+                    <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
+                        <span>
+                            {% assign level = programmingSkill.percentage | plus:0 %}
+                            {% if level > 0 and level <= 25 %}了解
+                            {% elsif level > 25 and level <= 50 %}熟悉
+                            {% elsif level > 50 and level <= 85 %}掌握
+                            {% elsif level > 85 and level <= 100 %}精通
+                            {% endif %}
+                        </span>
+                    </div>
+                </div>
+                {% endif %}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if site.resume.languages %}
+    <h3 class="title with-icon">语言技能</h3>
+    <div class="grid-block">
+        <ul class="list-unstyled list-strip">
+            {% for language in site.resume.languages %}
+            {% if language.name %}
+            {% if language.proficiency %}
+            <li>
+                <i class="fa fa-check"></i>
+                <span class="badge badge-green badge-right-float">{{ language.proficiency }}</span>
+                {{ language.name }}
+            </li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</main>
+{% include footer.html %}

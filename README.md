@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+#博客说明
 
-You can use the [editor on GitHub](https://github.com/laingke/laingke.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## 目录
+* 关于作者
+* 项目结构
+* 鸣谢
+* 欢迎参与
+* 许可证
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 关于作者
+我是 LaingKe，你可以在[这里](https://laingke.github.io/about.html)看到我的简介以及联系方式。
 
-### Markdown
+在这个博客里，你可以看到我分享的文章，欢迎留言评论分享你的观点。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## 项目结构
 ```
+|-- _includes  页面区块
+|-- _layouts  布局
+|-- _plugins  插件
+|-- _posts  文章
+|-- _sites  部署内容
+|-- assets  资源
+|   |-- cover  封面图片资源
+|   |-- images  图片资源
+|   |-- css  CSS 样式
+|   |-- fonts  字体资源
+|   |-- js  JS 脚本
+|-- _config.yml  配置文件
+|-- LICENSE  许可证
+``` 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## 鸣谢
+该博客模板为基于 [HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll) Jekyll 主题修改而成。
 
-### Jekyll Themes
+感谢 [@xukimseven](https://github.com/xukimseven) 设计编写了如此精彩的主题。
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/laingke/laingke.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 欢迎参与
+看到了错误？
 
-### Support or Contact
+发现不合理的地方？
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+欢迎给我的文章进行评论或者发送合并代码请求！
+
+谢谢！ 
+
+## License 许可证
+MIT
