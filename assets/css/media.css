@@ -3,7 +3,7 @@
     display: none !important;
   }
 }
-@media screen and ( max-width : 800px ){
+@media screen and ( max-width : 1000px ){
   #index-header{
     height: 60px;
   }

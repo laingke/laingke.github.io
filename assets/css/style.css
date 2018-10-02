@@ -539,7 +539,7 @@ a {
 }
 
 .markdown-body {
-    max-width: 800px;
+    max-width: 80%;
     height: auto;
     margin: -155px auto 50px auto;
     background-color: white;
