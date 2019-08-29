@@ -618,7 +618,7 @@ a {
 }
 
 .post-top {
-    height: 550px;
+    height: 450px;
     width: 100%;
     /*background-color: #9A85FF;*/
     background-image: url(/assets/lineart.png);
@@ -631,7 +631,7 @@ a {
 
 .left-area, .right-area {
     width: 200px;
-    height: 75%;
+    height: 50%;
     /*background-color: rgba(255,255,255,0.3);*/
     position: relative;
 }
@@ -835,7 +835,6 @@ a {
     position: absolute;
     width: 80%;
     height: 430px;
-    top: 70px;
     left: 0;
     right: 0;
     margin: 0 auto;
