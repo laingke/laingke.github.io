@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "每秒解析 GB 级别的 JSON 文件"
-date:   2018-05-17 14:05:21 +0800
+date:   2019-05-17 14:05:21 +0800
 tags: JSON SIMD parsing translation
 color: rgb(0,90,90)
 cover: '../assets/images/cover/2019-06-20-simdjson-paper-cn-translation.png'
